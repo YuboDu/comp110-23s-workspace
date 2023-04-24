@@ -3,9 +3,9 @@
 __author__ = "730621860"
 
 
-def invert(input1: dict[str,str]) -> dict[str,str]:
-    """a function used to swtich the keys and values of the dict we input."""
-    output_dict: dict[str,str] = dict()
+def invert(input1: dict[str, str]) -> dict[str, str]:
+    """A function used to swtich the keys and values of the dict we input."""
+    output_dict: dict[str, str] = dict()
     for keys in input1:
         output_dict[input1[keys]] = keys
     if len(output_dict) != len(input1):
@@ -17,7 +17,7 @@ def favorite_color(input1: dict[str, str]) -> str:
     """A function used to check what is the color that shows mostly in dictionary value."""
     list_of_values: list[str] = []
     
-    empty_dict: dict[str,int] = dict()
+    empty_dict: dict[str, int] = dict()
    
     for keys in input1:
         list_of_values.append(input1[keys])
@@ -35,15 +35,12 @@ def favorite_color(input1: dict[str, str]) -> str:
     return most_frequncy_color
 
 
-
 def count(input1: list[str]) -> dict[str, int]:
     """A function used to check how many time a element shows in list and make it into a dictionary."""
-    empty_dict: dict[str,int] = dict()
+    empty_dict: dict[str, int] = dict()
     for elements in input1:
         if elements in empty_dict:
             empty_dict[elements] += 1
         if elements not in empty_dict:
             empty_dict[elements] = 1
     return empty_dict
-            
-            

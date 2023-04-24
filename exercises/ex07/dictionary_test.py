@@ -9,9 +9,10 @@ from exercises.ex07.dictionary import favorite_color
 from exercises.ex07.dictionary import count
 # The test below is used to test fuction invert.
 
+
 def test_normal_dict() -> None:
     """Used to test the normal dictionary we input."""
-    assert invert({'a': 'm', 'b' : 'g', 'c': 'x'}) == {'m': 'a', 'g': 'b', 'x': 'c'}
+    assert invert({'a': 'm', 'b': 'g', 'c': 'x'}) == {'m': 'a', 'g': 'b', 'x': 'c'}
 
 
 def test_KeyError() -> None:
@@ -26,10 +27,8 @@ def test_empty_dict() -> None:
     assert invert({}) == {}
 
 
-
-
-
 # The test below is used to test fuction favorite_colo.
+
 
 def test_normal_dict_check_2_color() -> None:
     """Used to check when we input the normal dictionary."""
@@ -47,6 +46,7 @@ def test_normal_dict_check_4_color() -> None:
 
 
 # The test below is used to test fuction count.
+
 
 def test_normal_list_elements_shows_1_time() -> None:
     """Used to test when we only input list with variables show single time."""

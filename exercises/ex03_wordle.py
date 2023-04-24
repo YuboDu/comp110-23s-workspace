@@ -1,6 +1,6 @@
 """Exercises 3 for Structured Wordle by Yubo Du, my third program in comp110."""
 
-__author__  = "730621860"
+__author__ = "730621860"
 
 
 def contains_char(str1_being_searched_through: str, str2_being_searched_for: str) -> bool:
